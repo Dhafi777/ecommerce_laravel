@@ -5,7 +5,12 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand logo_h" href="index.html"><img src="{{ asset('assets/templates/user/img/logo.png') }}" alt=""></a>
+<<<<<<< HEAD
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+=======
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -14,12 +19,20 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
+<<<<<<< HEAD
                         <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+=======
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>                       
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item"><a class="nav-link" href="{{ route('user.logout') }}">Logout</a></li>
                     </ul>
+<<<<<<< HEAD
                 </div>
+=======
+                </div> 
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             </div>
         </nav>
     </div>

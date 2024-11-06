@@ -21,22 +21,36 @@
                         <th>#</th> 
                         <th>Nama Produk</th> 
                         <th>Harga Produk</th> 
+<<<<<<< HEAD
                         <th>Nama Distributor</th>
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
                         <th>Action</th> 
                     </tr> 
                     @php 
                         $no = 0 
                     @endphp 
+<<<<<<< HEAD
                     @forelse ($data as $item) 
+=======
+                    @forelse ($products as $item) 
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
                         <tr> 
                             <td>{{ $no += 1 }}</td> 
                             <td>{{ $item->name }}</td> 
                             <td>{{ $item->price }} Points</td>
+<<<<<<< HEAD
                             <td>{{ $item->nama_distributor }}</td>
                             <td> 
                             <a href="{{ route('product.detail', $item->id) }}" class="badge badge-info">Detail</a> 
                             <a href="{{ route('product.edit', $item->id) }}" class="badge badge-warning"> Edit </a>  
                             <a href="{{ route('product.delete', $item->id) }}" class="badge badge-danger"  data-confirm-delete="true">Hapus</a> 
+=======
+                            <td> 
+                                <a href="{{ route('product.detail', $item->id) }}" class="badge badge-info">Detail</a>
+                                <a href="{{ route('product.edit', $item->id) }}" class="badge badge-warning"> Edit </a>
+                                <a href="{{ route('product.delete', $item->id) }}" class="badge badge-danger" data-confirm-delete="true">Hapus</a>
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
                             </td> 
                         </tr> 
                     @empty 

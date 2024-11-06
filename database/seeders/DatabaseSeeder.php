@@ -17,7 +17,11 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
+<<<<<<< HEAD
         User::create([
+=======
+       User::create([
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             'name' => 'user1',
             'email' => 'user@gmail.com',
             'password' => bcrypt('123456789'),
@@ -30,6 +34,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'password' => bcrypt('123456789'),
         ]);
+<<<<<<< HEAD
 
         Skripsi::create([
             'judul' => 'Pengaruh terhadap Lingkungan sekitar', 
@@ -42,3 +47,16 @@ class DatabaseSeeder extends Seeder
         
     }
 }
+=======
+        Skripsi::create([
+            'judul' => 'Pengembangan Aplikasi Pemantauan Lingkungan menggunakan Sensor IoT pada Perangkat Mobile',
+            'nama' => 'Dhafi Nurhadi',
+            'nim' => 'dhafi@gmail.com',
+            'angkatan' => '2022',
+            'dospem1' => 'Fajri Profesio',
+            'dospem2' => 'Niki Hardinata',
+        ]);
+    }
+}
+
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa

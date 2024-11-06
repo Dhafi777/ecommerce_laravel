@@ -1,6 +1,9 @@
 <?php
+<<<<<<< HEAD
 use App\Http\Controllers\Admin\DistributorController;
 use App\Http\Controllers\Admin\FlashsaleController;
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
 use App\Http\Controllers\Auth\AuthController; 
 use Illuminate\Support\Facades\Route; 
 use App\Http\Controllers\Admin\AdminController; 
@@ -26,6 +29,7 @@ Route::group(['middleware' => ['admin', 'web']], function() {
     Route::get('/admin-logout', [AuthController::class, 'admin_logout'])->name('admin.logout');
     Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
     Route::post('/product', [ProductController::class, 'store'])->name('product.store');
+<<<<<<< HEAD
     Route::get('/admin/product/detail/{id}', [ProductController::class,'detail'])->name('product.detail');
     //Product Add
     Route::get('/product/edit/{id}', [ProductController::class, 'edit'])->name('product.edit');
@@ -54,6 +58,13 @@ Route::get('/admin/flashsale/detail/{id}', [FlashsaleController::class, 'detail'
 Route::get('/flashsale/edit/{id}', [FlashsaleController::class, 'edit'])->name('flashsale.edit'); 
 Route::post('/flashsale/update/{id}', [FlashsaleController::class, 'update'])->name('flashsale.update'); 
 Route::delete('/flashsale/delete/{id}', [FlashsaleController::class, 'delete'])->name('flashsale.delete');
+=======
+    Route::get('/admin/product/detail/{id}', [ProductController::class, 'detail'])->name('product.detail');
+    Route::get('/product/edit/{id}', [ProductController::class, 'edit'])->name('product.edit');
+    Route::post('/product/update/{id}', [ProductController::class, 'update'])->name('product.update');
+    Route::delete('/product/delete/{id}', [ProductController::class, 'delete'])->name('product.delete');
+
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
 
 });
 
@@ -61,6 +72,7 @@ Route::delete('/flashsale/delete/{id}', [FlashsaleController::class, 'delete'])-
 Route::group(['middleware' => ['web']], function() {
     Route::get('/user', [UserController::class, 'index'])->name('user.dashboard');
     Route::get('/user-logout', [AuthController::class, 'user_logout'])->name('user.logout');
+<<<<<<< HEAD
     //Detail Product Users
     Route::get('/user/product/detail/{id}', [UserController::class,'detail_product'])->name('user.detail.product');
     Route::get('/product/purchase/{productId}/{userId}', [UserController::class,'purchase']);
@@ -71,4 +83,11 @@ Route::group(['middleware' => ['web']], function() {
 
 
 
+=======
+    Route::get('/user/product/detail/{id}',[UserController::class, 'detail_product'])->name('user.detail.product');
+    Route::get('/product/purchase/{productId}/{userId}',[UserController::class, 'purchase']);
+
+});
+
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
 ?>

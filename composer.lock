@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "58499b4254aa3616e488095137e64c2f",
     "packages": [
         {
@@ -84,6 +85,11 @@
             "time": "2024-07-31T14:45:16+00:00"
         },
         {
+=======
+    "content-hash": "9d1ff4809823bf1bd6f517e10f21de5a",
+    "packages": [
+        {
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             "name": "brick/math",
             "version": "0.12.1",
             "source": {
@@ -213,6 +219,7 @@
             "time": "2024-02-09T16:56:22+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "composer/semver",
             "version": "3.4.3",
             "source": {
@@ -294,6 +301,8 @@
             "time": "2024-09-19T14:15:21+00:00"
         },
         {
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             "name": "dflydev/dot-access-data",
             "version": "v3.0.3",
             "source": {
@@ -537,6 +546,7 @@
             "time": "2024-02-05T11:56:58+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "dompdf/dompdf",
             "version": "v3.0.0",
             "source": {
@@ -692,6 +702,8 @@
             "time": "2024-04-29T13:26:35+00:00"
         },
         {
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             "name": "dragonmantank/cron-expression",
             "version": "v3.3.3",
             "source": {
@@ -820,6 +832,7 @@
             "time": "2023-10-06T06:47:41+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "ezyang/htmlpurifier",
             "version": "v4.18.0",
             "source": {
@@ -881,6 +894,8 @@
             "time": "2024-11-01T03:51:45+00:00"
         },
         {
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             "name": "fruitcake/php-cors",
             "version": "v1.3.0",
             "source": {
@@ -2194,6 +2209,7 @@
             "time": "2024-01-28T23:22:08+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "maatwebsite/excel",
             "version": "3.1.58",
             "source": {
@@ -2526,6 +2542,8 @@
             "time": "2024-03-31T07:05:07+00:00"
         },
         {
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             "name": "monolog/monolog",
             "version": "3.7.0",
             "source": {
@@ -3027,6 +3045,7 @@
             "time": "2024-09-05T15:25:50+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "phpoffice/phpspreadsheet",
             "version": "1.29.2",
             "source": {
@@ -3132,6 +3151,8 @@
             "time": "2024-09-29T07:04:47+00:00"
         },
         {
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             "name": "phpoption/phpoption",
             "version": "1.9.3",
             "source": {
@@ -3569,6 +3590,7 @@
         },
         {
             "name": "psr/simple-cache",
+<<<<<<< HEAD
             "version": "1.0.0",
             "source": {
                 "type": "git",
@@ -3583,11 +3605,31 @@
             },
             "require": {
                 "php": ">=5.3.0"
+=======
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "1.0.x-dev"
+=======
+                    "dev-master": "3.0.x-dev"
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
                 }
             },
             "autoload": {
@@ -3602,7 +3644,11 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
+<<<<<<< HEAD
                     "homepage": "http://www.php-fig.org/"
+=======
+                    "homepage": "https://www.php-fig.org/"
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
                 }
             ],
             "description": "Common interfaces for simple caching",
@@ -3614,9 +3660,15 @@
                 "simple-cache"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/php-fig/simple-cache/tree/1.0.0"
             },
             "time": "2017-01-02T13:31:39+00:00"
+=======
+                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
+            },
+            "time": "2021-10-29T13:26:27+00:00"
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
         },
         {
             "name": "psy/psysh",
@@ -4013,6 +4065,7 @@
             "time": "2024-06-15T16:17:23+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "sabberworm/php-css-parser",
             "version": "v8.7.0",
             "source": {
@@ -4078,6 +4131,8 @@
             "time": "2024-10-27T17:38:32+00:00"
         },
         {
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
             "name": "symfony/clock",
             "version": "v7.1.1",
             "source": {

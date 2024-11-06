@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
 <head>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,6 +19,7 @@
     <meta charset="UTF-8">
     <!-- Site Title -->
     <title>Merch Store</title>
+<<<<<<< HEAD
 
     @include('layouts.user.style')
 </head>
@@ -32,4 +36,15 @@
     @include('layouts.user.script')
 </body>
 
+=======
+    @include('layouts.user.style')
+</head>
+<body>
+    @include('sweetalert::alert')
+    @include('layouts.user.navbar')
+    @yield('content')
+    @include('layouts.user.footer')
+    @include('layouts.user.script')
+</body>
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
 </html>

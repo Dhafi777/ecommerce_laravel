@@ -9,6 +9,7 @@
         <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
             <li class="{{ Route::is('admin.dashboard') ? 'active' : '' }}">
+<<<<<<< HEAD
                 <a class="nav-link" href="{{ route('admin.dashboard') }}"><i class="fas fa-home"></i> <span>Dashboard</span></a>
             </li>
             <li class="{{ Request::is('product*') ? 'active' : '' }}"> 
@@ -23,3 +24,17 @@
         </ul>
     </aside>
 </div>
+=======
+                <a class="nav-link" href="{{ route('admin.dashboard') }}">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="{{ Request::is('product*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.product') }}"><i class="fas fa-box"></i>
+                    <span>Produk</span></a>
+            </li>
+        </ul>
+    </aside>
+</div>
+>>>>>>> 16de45ab6cf11e2649948d7fca0d0415845d2dfa
