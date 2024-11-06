@@ -10,6 +10,7 @@ class Flashsale extends Model
  
     protected $fillable = [ 
         'product_name', 
+        
         'original_price', 
         'discount_price', 
         'discount_percentage', 

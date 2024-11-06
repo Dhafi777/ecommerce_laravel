@@ -61,7 +61,6 @@
                                         <p class="hover-text">Detail</p> 
                                     </a> 
                                 </div> 
- 
                             </div> 
                         </div> 
                     </div> 
@@ -73,7 +72,8 @@
                     </div> 
                 @endforelse 
             </div> 
-            <h1>Flash Sale</h1> 
+
+        <h1 id="Flashsale">Flash Sale</h1> 
         <div class="row"> 
             @forelse($flashsales as $flashSaleItem) 
                 <div class="col-lg-4 col-md-6 mb-4"> 
@@ -86,7 +86,7 @@
                             <p class="card-text">Diskon: {{ round($flashSaleItem->discount_percentage) }}%</p> 
                             <p class="card-text">Sisa waktu: {{ \Carbon\Carbon::parse($flashSaleItem->end_time)->diffForHumans() }}</p> 
                             <p class="card-text">Stok tersisa: {{ $flashSaleItem->stock }}</p> 
-                            <button class="btn btn-primary">Beli Sekarang</button> 
+                            <button class="btn btn-primary" onclick="confirmFlashSalePurchase('{{ $flashSaleItem->id }}', '{{ Auth::user()->id }}')">Beli Sekarang</button> 
                         </div> 
                     </div> 
                 </div> 
@@ -99,23 +99,39 @@
 </section> 
 <!-- end product Area --> 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
-    <script> 
-        function confirmPurchase(productId, userId) { 
-            Swal.fire({ 
-                title: 'Apakah Anda yakin?', 
-                text: "Anda akan membeli produk ini!", 
-                icon: 'warning', 
-                showCancelButton: true, 
-                confirmButtonColor: '#3085d6', 
-                cancelButtonColor: '#d33', 
-                confirmButtonText: 'Ya, Beli!', 
-                cancelButtonText: 'Batal' 
-            }).then((result) => { 
-                if (result.isConfirmed) { 
-                    window.location.href = '/product/purchase/' + productId 
-+ '/' + userId; 
-                } 
-            }); 
-        } 
-    </script> 
+<script> 
+    function confirmPurchase(productId, userId) { 
+        Swal.fire({ 
+            title: 'Apakah Anda yakin?', 
+            text: "Anda akan membeli produk ini!", 
+            icon: 'warning', 
+            showCancelButton: true, 
+            confirmButtonColor: '#3085d6', 
+            cancelButtonColor: '#d33', 
+            confirmButtonText: 'Ya, Beli!', 
+            cancelButtonText: 'Batal' 
+        }).then((result) => { 
+            if (result.isConfirmed) { 
+                window.location.href = '/product/purchase/' + productId + '/' + userId; 
+            } 
+        }); 
+    }
+
+    function confirmFlashSalePurchase(flashSaleId, userId) { 
+        Swal.fire({ 
+            title: 'Apakah Anda yakin?', 
+            text: "Anda akan membeli produk Flash Sale ini!", 
+            icon: 'warning', 
+            showCancelButton: true, 
+            confirmButtonColor: '#3085d6', 
+            cancelButtonColor: '#d33', 
+            confirmButtonText: 'Ya, Beli!', 
+            cancelButtonText: 'Batal' 
+        }).then((result) => { 
+            if (result.isConfirmed) { 
+                window.location.href = '/user/#Flashsale'; 
+            } 
+        }); 
+    } 
+</script> 
 @endsection

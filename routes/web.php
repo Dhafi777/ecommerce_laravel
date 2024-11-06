@@ -39,8 +39,11 @@ Route::group(['middleware' => ['admin', 'web']], function() {
     Route::post('/distributor', [DistributorController::class, 'store'])->name('distributor.store');
     Route::get('/admin/distributor/detail/{id}', [DistributorController::class,'detail'])->name('distributor.detail');
 
+    Route::post('/distributor/import', [DistributorController::class,'import'])->name('distributor.import');
+    Route::get('/distributor/export', [DistributorController::class, 'export'])->name('distributor.export');
+
     Route::get('/distributor/edit/{id}', [DistributorController::class, 'edit'])->name('distributor.edit');
-    Route::post('/distributor/update/{id}', [DistributorController::class, 'update'])->name('distributor.update');
+    Route::put('/distributor/update/{id}', [DistributorController::class, 'update'])->name('distributor.update');
 
     Route::delete('/distributor/delete/{id}', [DistributorController::class,'delete'])->name('distributor.delete');
 
